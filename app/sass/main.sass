@@ -1,0 +1,100 @@
+@import vars
+@import fonts
+@import libs
+@import cleancss
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $color-primary-strong-cyan
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+.grid-test
+	border: 1px solid #000000
+
+body
+	background-color: #fff
+	font-size: 18px
+	min-width: 320px
+	max-width: 1440px
+	position: relative
+	line-height: 1.65
+	font-family: 'Bai', sans-serif
+	overflow-x: hidden
+	color: $color-neutral-dgb
+	margin: 0 auto
+
+header
+	background: url(../img/bg-header-desktop.png) center top no-repeat
+	display: grid
+	grid-template-columns: auto
+	margin-bottom: 160px
+	svg
+		justify-self: center
+		margin:
+			top: 130px
+			bottom: 68px
+	h1
+		font-size: 33px
+		font-weight: 600
+		text-align: center
+		margin-bottom: 25px
+	p
+		text-align: center
+	div
+		justify-self: center
+		button
+			width: 227px
+			height: 53px
+			font-size: 17px
+			font-weight: 600
+			border-radius: 40px
+			border: none
+			color: #ffffff
+			&:first-child
+				background-color: $color-primary-strong-cyan
+				box-shadow: 0 4px 0 0 darken($color-primary-strong-cyan, 5%)
+				&:hover
+					background-color: lighten($color-primary-strong-cyan, 5%)
+					box-shadow: 0 4px 0 0 lighten($color-primary-strong-cyan, 5%)
+			&:last-child
+				background-color: $color-primary-light-blue
+				box-shadow: 0 4px 0 0 darken($color-primary-light-blue, 5%)
+				&:hover
+					background-color: lighten($color-primary-light-blue, 5%)
+					box-shadow: 0 4px 0 0 lighten($color-primary-light-blue, 5%)
+
+.main
+	display: grid
+	h2
+		font-size: 26px
+		text-align: center
+	> p
+		text-align: center
+
+
+
+//.example-grid
+//	display: grid
+//	grid-gap: $gutter
+//	grid-template-columns: 1fr 1fr
+//	grid-template-areas: "left right"
+//	> div:first-child
+//		grid-area: left
+//	> div:last-child
+//		grid-area: right
+//	+media-breakpoint-down(xs)
+//		display: block
+//		> div
+//			padding: $gutter/2 0
+
+
+.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
+	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)

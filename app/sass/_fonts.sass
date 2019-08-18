@@ -1,0 +1,24 @@
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
+
+
+@include font('Bai', normal, 400, '../fonts/baijamjuree-regular-webfont.woff2')
+@include font('Bai', italic, 400, '../fonts/baijamjuree-regularitalic-webfont.woff2')
+@include font('Bai', normal, 600, '../fonts/baijamjuree-semibold-webfont.woff2')
+@include font('Bai', italic, 600, '../fonts/baijamjuree-semibolditalic-webfont.woff2')
