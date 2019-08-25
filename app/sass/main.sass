@@ -44,6 +44,8 @@ h3
 
 header
 	background: url(../img/bg-header-desktop.png) center top no-repeat
+	width: 100vw
+	margin-left: calc(-50vw + 50%)
 	display: grid
 	grid-template-columns: auto
 	margin-bottom: 160px
@@ -81,6 +83,10 @@ header
 				&:hover
 					background-color: lighten($color-primary-light-blue, 5%)
 					box-shadow: 0 4px 0 0 lighten($color-primary-light-blue, 5%)
+	@media only screen and (max-device-width: 576px)
+		background: url("../img/bg-header-mobile.png") center top no-repeat
+		background-size: cover
+
 
 .main
 	display: grid
@@ -102,6 +108,7 @@ header
 			height: auto
 			position: relative
 			left: -30px
+			clip-path: inset(0 0 0 30px)
 		.text-desktop
 			display: grid
 			max-width: 340px
