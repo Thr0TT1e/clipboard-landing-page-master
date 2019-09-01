@@ -122,9 +122,6 @@ header
 				background-color: lighten($color-primary-light-blue, 5%)
 				box-shadow: 0 4px 0 0 lighten($color-primary-light-blue, 5%)
 
-
-
-
 .main
 	display: grid
 	h2
@@ -211,32 +208,9 @@ header
 		text-align: center
 		max-width: 700px
 		justify-self: center
-	div
-		justify-self: center
-		button
-			width: 227px
-			height: 53px
-			font-size: 0.95rem
-			font-weight: 600
-			border-radius: 40px
-			border: none
-			color: #ffffff
-			&:first-child
-				background-color: $color-primary-strong-cyan
-				box-shadow: 0 4px 0 0 darken($color-primary-strong-cyan, 5%)
-				&:hover
-					background-color: lighten($color-primary-strong-cyan, 5%)
-					box-shadow: 0 4px 0 0 lighten($color-primary-strong-cyan, 5%)
-			&:last-child
-				background-color: $color-primary-light-blue
-				box-shadow: 0 4px 0 0 darken($color-primary-light-blue, 5%)
-				&:hover
-					background-color: lighten($color-primary-light-blue, 5%)
-					box-shadow: 0 4px 0 0 lighten($color-primary-light-blue, 5%)
 
 footer
 	display: grid
-	//grid-template-columns: 350px 800px 290px
 	grid-template-columns: 1fr minmax(auto, 800px) 1fr
 	grid-template-rows: 65px
 	background-color: #f5f6f8
@@ -278,6 +252,7 @@ footer
 			padding: 0
 		p
 			font-size: 1.6rem
+
 	.two-btn
 		display: grid
 		grid-template-columns: 1fr
@@ -332,3 +307,27 @@ footer
 		grid-template-columns: 1fr
 		justify-items: center
 		grid-row-gap: 60px
+
+	.block-clipboard
+		p
+			padding: $gutter
+
+	footer
+		grid-template-columns: minmax(375px, 576px)
+		grid-template-rows: auto
+		grid-row-gap: $gutter
+		.footer-logo
+			grid-template-columns: minmax(375px, 576px)
+		.footer-menu ul
+			grid-template-columns: 1fr
+			justify-items: center
+			li
+				font-size: 1.2rem
+				padding-bottom: 20px
+				color: $color-neutral-grayish-blue
+		.footer-fem
+			grid-column: auto
+		.footer-social
+			justify-self: center
+			a
+				margin: 0 15px
