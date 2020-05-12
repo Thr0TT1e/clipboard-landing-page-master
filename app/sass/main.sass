@@ -94,8 +94,6 @@ header
 			&:hover
 				background-color: lighten($color-primary-light-blue, 5%)
 				box-shadow: 0 4px 0 0 lighten($color-primary-light-blue, 5%)
-	+media-breakpoint-down(sx)
-  		width: 80%
 
 .main
 	display: grid
@@ -130,13 +128,6 @@ header
 			p
 				font-size: 0.889rem
 				padding-bottom: 40px
-		+media-breakpoint-down(sx)
-			grid-template-columns: 1fr
-			.img-desktop img
-				position: static
-				clip-path: none
-			.text-desktop
-				grid-template-columns: 1fr
 
 .devices-sec
 	display: grid
@@ -187,8 +178,6 @@ header
 	justify-content: space-evenly
 	align-items: center
 	margin: 100px 20px
-	+media-breakpoint-down(sx)
-		grid-template-columns: 1fr
 
 .block-clipboard
 	display: grid
@@ -209,8 +198,6 @@ footer
 	padding:
 		top: 45px
 		bottom: 45px
-	+media-breakpoint-down(sx)
-		grid-template-columns: 1fr
 	.footer-logo
 		justify-self: center
 		svg
@@ -256,6 +243,8 @@ footer
 			width: 80%
 			padding: 10px
 			font-size: 1.8rem
+		+media-breakpoint-down(sx)
+			width: 80%
 
 	.main
 		h2
