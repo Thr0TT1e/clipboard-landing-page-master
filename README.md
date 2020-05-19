@@ -2,6 +2,7 @@
 Мои работы можно посмотреть тут: <a href="https://clipboard-lp.noble24.pro" target="_blank"> <img src="https://img.shields.io/badge/Site-Noble24.pro-orange?style=for-the-badge" alt="Страница на Noble24.pro"> </a> и <a href="https://clipboard-lp.netlify.app/" target="_blank"> <img src="https://img.shields.io/badge/Site-Nitlify.com-blue?style=for-the-badge" alt="Страница на Netlify.com"> </a>
 ***
 
+[![time tracker](https://wakatime.com/badge/github/Thr0TT1e/clipboard-landing-page-master.svg)](https://wakatime.com/badge/github/Thr0TT1e/clipboard-landing-page-master)
 
 # Frontend Mentor - Clipboard landing page
 
